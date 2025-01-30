@@ -10,6 +10,24 @@ A manual for Foundry VTT.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: General:
 
+   all/ui/overview.rst
    
+.. toctree::
+   :maxdepth: 2
+   :caption: Players:
+
+   player/ui/overview.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Game Masters:
+
+   gm/ui/overview.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Administrator:
+    
+   admin/ui/overview.rst
