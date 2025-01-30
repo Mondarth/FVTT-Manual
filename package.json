@@ -1,0 +1,30 @@
+{
+  "name": "foundryvttmanual",
+  "version": "12.0.0",
+  "description": "Manual for FoundryVTT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warn: no test specified\" && exit 0",
+    "prepare": "husky",
+    "build:docs": "docker run --rm --user \"$(id -u):$(id -g)\" -v \"$(pwd)/docs\":/docs ghcr.io/ulenarofmondarth/sphinx-docs make html",
+    "serve:docs": "docker run --rm --name docserver -d -p 8080:80 -v \"$(pwd)/docs/_build/html\":/usr/share/nginx/html:ro nginx",
+    "devserve:docs": "docker run --rm --user \"$(id -u):$(id -g)\" --name docdevserver -d -p 8081:8000 -v \"$(pwd)/docs\":/doc -w /doc ghcr.io/ulenarofmondarth/sphinx-docs sphinx-autobuild --host 0.0.0.0 --port 8000 . _build/html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ulenarofmondarth/FoundryVTTManual.git"
+  },
+  "author": "UlenarOfMondarth",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/ulenarofmondarth/FoundryVTTManual/issues"
+  },
+  "homepage": "https://github.com/ulenarofmondarth/FoundryVTTManual#readme",
+  "devDependencies": {
+    "@commitlint/cli": "19.5.0",
+    "@commitlint/config-conventional": "19.5.0",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^9.1.6"
+  }
+}
