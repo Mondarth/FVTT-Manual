@@ -9,6 +9,8 @@
   <title>Foundry’s User Interface - Players &mdash; Ulenar&#39;s FoundryVTT Documentation 12.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -16,11 +18,12 @@
       <script src="../../_static/documentation_options.js?v=12c8f029"></script>
       <script src="../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Foundry’s User Interface - Game Master" href="../../gm/ui/overview.html" />
-    <link rel="prev" title="Foundry’s User Interface" href="../../all/ui/overview.html" /> 
+    <link rel="next" title="Joining a Game" href="logging-on.html" />
+    <link rel="prev" title="Modules" href="../../all/concepts/module.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,10 +48,19 @@
               <p class="caption" role="heading"><span class="caption-text">General:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../all/ui/overview.html">Foundry’s User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../all/roles.html">Foundry User Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../all/concepts.html">Key Concepts</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Foundry’s User Interface - Players</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Foundry’s User Interface - Players</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logging-on.html">Joining a Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config/player-dialog.html">User Configuration dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character-sheet.html">Character Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config/settings.html">Player Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="av-chat.html">Audio/Video Chat</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
 <ul>
@@ -57,6 +69,13 @@
 <p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/technical/primary_canvas_group.html">Primary Canvas Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/technical/interface_canvas_group.html">Interface Canvas Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/todo.html">Work Remaining (To-do)</a></li>
 </ul>
 
         </div>
@@ -85,12 +104,29 @@
              
   <section id="foundry-s-user-interface-players">
 <h1>Foundry’s User Interface - Players<a class="headerlink" href="#foundry-s-user-interface-players" title="Link to this heading"></a></h1>
+<p>The Foundry User Interface is described in detail in the <a class="reference internal" href="../../all/ui/overview.html"><span class="doc">Foundry’s User Interface</span></a>. This ‘Players’ section describle how players might expect to interact with the interface.</p>
 <p>As a player your experience is focussed on viewing scenes presented by your Game Master (GM) and controlling your character (often represented by a token on the scene).</p>
 <p>This section presents the core interface elements you will need as a player <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Player User Interface</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="logging-on.html">Joining a Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config/player-dialog.html">User Configuration dialog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config/player-dialog.html#changing-your-user-configuraton">Changing your user configuraton</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="character-sheet.html">Character Sheet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character-sheet.html#change-character-sheet-appearance">Change Character Sheet appearance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="config/settings.html">Player Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="av-chat.html">Audio/Video Chat</a></li>
+</ul>
+</div>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f1" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>This manual contains examples using the Dungeons &amp; Dragons 5e system. Your experience may be different if using another game system or if your GM is using modules to enhance your experience.</p>
+<p>This manual contains examples using the Dungeons &amp; Dragons 5e system. Your experience may be different if using another game system or if your <abbr title="Game Master">GM</abbr> is using modules to enhance your experience.</p>
 </aside>
 </aside>
 </section>
@@ -99,8 +135,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../all/ui/overview.html" class="btn btn-neutral float-left" title="Foundry’s User Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../gm/ui/overview.html" class="btn btn-neutral float-right" title="Foundry’s User Interface - Game Master" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../../all/concepts/module.html" class="btn btn-neutral float-left" title="Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="logging-on.html" class="btn btn-neutral float-right" title="Joining a Game" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

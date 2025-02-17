@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game User Interface &mdash; Ulenar&#39;s FoundryVTT Documentation 12.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=12c8f029"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Background Image Layer" href="layers/background_image.html" />
+    <link rel="prev" title="Join Screen" href="join.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Ulenar's FoundryVTT Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="overview.html">Foundry’s User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Setup Screen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging-on.html">Logging on</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Game User Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#canvas">Canvas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="layers/background_image.html">Background Image Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/tiles.html">Tiles Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/token_actors.html">Token Actors Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/foreground_image.html">Foreground Image Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/weather.html">Weather Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/drawings.html">Drawing Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/effects.html">Effects Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/templates.html"> Templates Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layers/sounds.html">Sounds Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tools">Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tools/tokens.html"> Token Controls  </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/templates.html"> Measurement Controls  </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/tiles.html"> Tile Controls </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/drawings.html"> Drawing Tools </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/walls.html"> Wall Controls </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/lights.html"> Lighting Controls </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/sounds.html"> Ambient Sounds Controls </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/regions.html"> Region Controls </a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/journal.html"> Journal Notes  </a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#scene-navigation">Scene navigation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="navigation_bar.html">Navigation Bar</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tabs">Tabs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tabs/chat.html">Chat Messages Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/combat.html">Combat Encounters Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/actors.html">Actors Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/items.html">Items Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/journal.html">Journal Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/rollable_tables.html">Rollable Tables Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/card_stacks.html">Card Stacks Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/playlists.html">Playlists Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/compendiums.html">Compendium Packs Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tabs/settings.html">Game Settings Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#players">Players</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="players.html">Players List</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#hotbar">Hotbar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="hotbar.html">Hotbar Area</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../roles.html">Foundry User Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Key Concepts</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../player/ui/overview.html">Foundry’s User Interface - Players</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gm/ui/overview.html">Foundry’s User Interface - Game Master</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/technical/primary_canvas_group.html">Primary Canvas Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/technical/interface_canvas_group.html">Interface Canvas Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/todo.html">Work Remaining (To-do)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Ulenar's FoundryVTT Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="overview.html">Foundry’s User Interface</a></li>
+      <li class="breadcrumb-item active">Game User Interface</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/all/ui/main-interface-components.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="game-user-interface">
+<h1>Game User Interface<a class="headerlink" href="#game-user-interface" title="Link to this heading"></a></h1>
+<p>Once logged in to the game you will see the main Foundry user interface. The default interface consists of the following areas <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<section id="canvas">
+<span id="id2"></span><h2>Canvas<a class="headerlink" href="#canvas" title="Link to this heading"></a></h2>
+<p>The canvas is where all the action takes place. It is built up in layers, each layer specialising in one of Foundry’s interactive elements.</p>
+<p>The layers are <a class="reference internal" href="../../appendices/glossary.html#term-Render"><span class="xref std std-term">rendered</span></a> in the following order (lowest to highest <a class="footnote-reference brackets" href="#f2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>).</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="layers/background_image.html">Background Image Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/tiles.html">Tiles Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/token_actors.html">Token Actors Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/foreground_image.html">Foreground Image Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/weather.html">Weather Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/drawings.html">Drawing Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/effects.html">Effects Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/templates.html"> Templates Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layers/sounds.html">Sounds Layer</a></li>
+</ul>
+</div>
+<p>In front of the canvas <abbr title="Foundry Virtual Table Top">FVTT</abbr> displays the <abbr title="User Interface">UI</abbr> application windows (outlined in the following sections).</p>
+</section>
+<section id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>In the upper left of the <abbr title="User Interface">UI</abbr> we find the tool buttons. These are presented as two columns:</p>
+<ol class="arabic simple">
+<li><p>To the left, the main tool groups are shown, each tool maps (roughly) to one of the <a class="reference internal" href="#canvas"><span class="std std-ref">canvas layers</span></a>.</p></li>
+<li><p>To the right of the main tool groups are the sub-tool buttons. These change according to which of the main tool groups is active and provide the tools used to interact with the <a class="reference internal" href="#canvas"><span class="std std-ref">canvas layers</span></a>.</p></li>
+</ol>
+<p>Which tools are available will depend upon:</p>
+<ol class="arabic simple">
+<li><p>Your <a class="reference internal" href="../roles/configuring.html"><span class="doc">access permissions</span></a>, in general Players(<img alt="Player" class="no-scaled-link" src="../../_images/Player_icon.png" style="height: 2ex;" />) have fewer tools than Game Masters(<img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" />).</p></li>
+<li><p>The <a class="reference internal" href="../concepts/module.html"><span class="doc">modules</span></a> active in your world. Modules may add new tools and tool groups.</p></li>
+</ol>
+<img alt="../../_images/token_controls.png" class="align-right" src="../../_images/token_controls.png" />
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Tool Groups</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/token_controls_icon.png" src="../../_images/token_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/tokens.html"><span class="doc"> Token Controls  </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /> <img alt="Player" class="no-scaled-link" src="../../_images/Player_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/measurement_controls_icon.png" src="../../_images/measurement_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/templates.html"><span class="doc"> Measurement Controls  </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /> <img alt="Player" class="no-scaled-link" src="../../_images/Player_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/tile_controls_icon.png" src="../../_images/tile_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/tiles.html"><span class="doc"> Tile Controls </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/drawing_tools_icon.png" src="../../_images/drawing_tools_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/drawings.html"><span class="doc"> Drawing Tools </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/wall_controls_icon.png" src="../../_images/wall_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/walls.html"><span class="doc"> Wall Controls </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/lighting_controls_icon.png" src="../../_images/lighting_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/lights.html"><span class="doc"> Lighting Controls </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/ambient_sound_controls_icon.png" src="../../_images/ambient_sound_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/sounds.html"><span class="doc"> Ambient Sounds Controls </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/region_controls_icon.png" src="../../_images/region_controls_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/regions.html"><span class="doc"> Region Controls </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/journal_notes_icon.png" src="../../_images/journal_notes_icon.png" />
+</td>
+<td><p><a class="reference internal" href="tools/journal.html"><span class="doc"> Journal Notes  </span></a></p></td>
+<td><p><img alt="Game Master" class="no-scaled-link" src="../../_images/GM_icon.png" style="height: 2ex;" /> <img alt="Player" class="no-scaled-link" src="../../_images/Player_icon.png" style="height: 2ex;" /></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="scene-navigation">
+<h2>Scene navigation<a class="headerlink" href="#scene-navigation" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>At the top of the <abbr title="User Interface">UI</abbr> are the main scene <a class="reference internal" href="navigation_bar.html"><span class="doc">navigation buttons</span></a>. These provide a quick way to move between <a class="reference internal" href="../concepts/scene.html"><span class="doc">scenes</span></a>.</p>
+<p>As a player you will often have access to only one scene, the <a class="reference internal" href="../concepts/scene.html#active-scene"><span class="std std-ref">active scene</span></a>, but the <abbr title="Game Master">GM</abbr> may enable navigation access to other scenes allowing you to switch which scene is displayed on your <a class="reference internal" href="../concepts/canvas.html"><span class="doc">canvas</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One common use of multiple scenes is providing a ‘landing page’ from which players can quickly access information about the campaign or their character.</p>
+</div>
+<p>In more complex adventures you may be transitioning between different scenes for any numbes of reasons, for example:</p>
+<ul class="simple">
+<li><p>Your party are in a large dungeon and the <abbr title="Game Master">GM</abbr> has broken it into multiple maps (scenes) in order to reduce the load on browsers.</p></li>
+<li><p>Your party are spread over multiple scenes and the <abbr title="Game Master">GM</abbr> is allowing you to ‘follow the action’.</p></li>
+<li><p>Your party are switching between realms, times, or others dimensions and these are represented by multiple scenes.</p></li>
+</ul>
+<p>The possiblilities are endless.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Regardless of how many scenes you have access to there will only ever be one <a class="reference internal" href="../concepts/scene.html#active-scene"><span class="std std-ref">active scene</span></a>.</p>
+</div>
+</section>
+<section id="tabs">
+<h2>Tabs<a class="headerlink" href="#tabs" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>To the right of the <abbr title="User Interface">UI</abbr> is the ‘tabs dock’. The following tabs are present by default.</p>
+<p><span class="fas fa-comments"></span><span class="guilabel">Chat Messages</span></p>
+<p>This is the main channel by which interactions are reported. Everything from dice rolls, requests for information, messages between players, or between players and the <abbr title="Game Master">GM</abbr>, all are recorded on the Chat log.</p>
+<p>At the bottom of the Chat tab is an entry box for messages, see <span class="xref std std-ref">chat messsages</span>.</p>
+<div class="admonition-todo admonition" id="id4">
+<p class="admonition-title">Todo</p>
+<p>Add section with details on chat message entry</p>
+</div>
+<p><a class="reference internal" href="../../_images/swords.png"><img alt="swords" src="../../_images/swords.png" style="height: 2ex;" /></a><span class="guilabel">Combat Encounters</span></p>
+<p>Combat is, for many games, a central feature. The combat tab is the primary interface for managing combat interactions.</p>
+<p><span class="fas fa-map"></span><span class="guilabel">Scenes</span></p>
+<p>Scenes configure the canvas. They can be used to (for example):</p>
+<ul class="simple">
+<li><p>Display an inteactive map to players.</p></li>
+<li><p>Display a dungeon map, revealing only what the player’s character token can see.</p></li>
+<li><p>Display an image during <a class="reference internal" href="../../appendices/glossary.html#term-Theatre-of-the-Mind"><span class="xref std std-term">theatre of the mind</span></a> play.</p></li>
+</ul>
+<p><span class="fas fa-user"></span><span class="guilabel">Actors</span></p>
+<p>An Actor is any agent within the game (principally <abbr title="Player Character">PC</abbr>’s and <abbr title="Non-Player Character">NPC</abbr>’s).</p>
+<p>As a Player this tab will contain your playable character(s).</p>
+<p>As a <abbr title="Game Master">GM</abbr> this tab will contain many actors as you have access to both the players charactres and all the non-player/playable chearacters.</p>
+<p><span class="fas fa-suitcase"></span><span class="guilabel">Items</span></p>
+<p>What is the fun of adventuring unless you can find, steal, gift, be gifted, or otherwise exchange ‘stuff’. That ‘stuff’ ir represented by items.</p>
+<p>The items tab contains the items you can access. (These are not items in your characters possession, those are recorded with the character’s Actor).</p>
+<p><span class="fas fa-book-open"></span><span class="guilabel">Journal</span></p>
+<p>Journals contain all manner of information.</p>
+<p>As a player your <abbr title="Game Master">GM</abbr> may giv access to journals containing information relevant to an adventure, you may also have a ‘personal’ journal that you can use to record information your character discovers.</p>
+<p>As a <abbr title="Game Master">GM</abbr> you may have many journals available describing the campaign or adventure.</p>
+<p><span class="fas fa-th-list"></span><span class="guilabel">Rollable Tables</span></p>
+<p>Rollable tables are exactly what they sound like, tables that can be used in combination with dice to select some random outcome.</p>
+<p><a class="reference internal" href="../../_images/cards.png"><img alt="cards" src="../../_images/cards.png" style="height: 2ex;" /></a><span class="guilabel">Card Stacks</span></p>
+<p><span class="fas fa-music"></span><span class="guilabel">Playlists</span></p>
+<p>This tab provides access to sound controls. This may be as simple as controlling the relative sound levels between background music and ambient sounds, or it may provide access to choose sounds to be played.</p>
+<p><span class="fas fa-atlas"></span><span class="guilabel">Compendium Packs</span></p>
+<p>Compendium packs provide access to ‘offline’ information. Compendium information is held on the Foundry server and only provided to the browser when requested. Keeping information in compendiums reduces the amount of information browsers need to maintain locally.</p>
+<p><span class="fas fa-cogs"></span><span class="guilabel">Game Settings</span></p>
+<p>Fairly self explanatory, this tab provides access to game settings.</p>
+</section>
+<section id="players">
+<h2>Players<a class="headerlink" href="#players" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>Down in the lower left of the <abbr title="User Interface">UI</abbr> you find the <a class="reference internal" href="players.html"><span class="doc">players</span></a> list. This can be expanded/collapsed by <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">left</kbd>-<kbd class="kbd docutils literal notranslate">click</kbd></kbd>. When expanded you will see a colour coded list of current players.</p>
+</section>
+<section id="hotbar">
+<h2>Hotbar<a class="headerlink" href="#hotbar" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>The <a class="reference internal" href="hotbar.html"><span class="doc">hotbar</span></a> area (bottom of <abbr title="User Interface">UI</abbr>)ll provides rapid access to pretty much any function you like. Fully customisable by players the hotbar can be populated with functions from around the Foundry interface collecting them into one location.</p>
+<p>The benefit being that you don’t need to go through potentially many clicks to access a function, simply drop
+it onto the hotbar as a shortcut and it becomes one click away.</p>
+<p class="rubric">Footnotes</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>As is repeatedly noted throughout this manual, the Foundry interface may look different because it can be changed by active modules.</p>
+</aside>
+<aside class="footnote brackets" id="f2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>This is a lie. The actual <a class="reference internal" href="../../appendices/glossary.html#term-Render"><span class="xref std std-term">render</span></a> order is also influenced by an object’s altitude and sort order (and can be further complicated if add-on modules are used). Howeves, the basic order shown is good for a mental model of how the layers are ordered.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="join.html" class="btn btn-neutral float-left" title="Join Screen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="layers/background_image.html" class="btn btn-neutral float-right" title="Background Image Layer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
