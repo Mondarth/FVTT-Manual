@@ -13,6 +13,9 @@ A manual for Foundry VTT.
    :caption: General:
 
    all/ui/overview.rst
+   all/roles.rst
+   all/concepts.rst
+   all/appendices/todo.rst
    
 .. toctree::
    :maxdepth: 2
@@ -31,3 +34,12 @@ A manual for Foundry VTT.
    :caption: Administrator:
     
    admin/ui/overview.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Appendices:
+
+   appendices/technical/primary_canvas_group.rst
+   appendices/technical/interface_canvas_group.rst
+   appendices/glossary.rst
+   appendices/todo.rst
