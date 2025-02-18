@@ -52,8 +52,10 @@ rst_prolog = """
 .. |then| replace:: :octicon:`arrow-right`
 .. |and| replace:: :octicon:`plus`
 .. |hLMB| replace:: Hold :kbd:`LMB`
+.. |dLMB| replace:: Double :kbd:`LMB`
 .. |hMMB| replace:: Hold :kbd:`MMB`
 .. |hRMB| replace:: Hold :kbd:`RMB`
+.. |dRMB| replace:: Double :kbd:`RMB`
 .. |LMB| replace:: :kbd:`LMB`
 .. |MMB| replace:: :kbd:`MMB`
 .. |RMB| replace:: :kbd:`RMB`

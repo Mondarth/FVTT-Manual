@@ -20,6 +20,38 @@
 
       .. youtube:: nXZ-fwcygYk
 
+
+.. dropdown:: In a nutshell
+
+   Acts on the :doc:`/all/ui/layers/token_actors`.
+
+   The following apply whenever this tool is active.
+
+   .. card::
+
+      Keyboard
+      ^^^
+      .. list-table::
+
+         * - :kbd:`T`
+           - Target the token under the mouse cursor.
+         * - :kbd:`shift` |and| :kbd:`T`
+           - Token under the mouse cursor is added to, 
+
+             or removed from, existing targetting selection.
+
+   .. card::
+
+       Mouse
+       ^^^
+       .. list-table::
+
+          * - |dRMB|
+            - Target the token under the cursor.
+          * - :kbd:`shift` |and| |dRMB|
+            - Toggle targeted state of the token.
+
+
 .. image:: /all/ui/images/tool_panels/token_controls.png
    :align: right
 
