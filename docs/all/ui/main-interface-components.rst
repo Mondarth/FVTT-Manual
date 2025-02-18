@@ -218,7 +218,7 @@ Players
 
    players.rst
 
-Down in the lower left of the |UI| you find the :doc:`players <players>` list. This can be expanded/collapsed by :kbd:`left-click`. When expanded you will see a colour coded list of current players.
+Down in the lower left of the |UI| you find the :doc:`players <players>` list. This can be expanded/collapsed by |LMB|. When expanded you will see a colour coded list of current players.
 
 Hotbar
 ------

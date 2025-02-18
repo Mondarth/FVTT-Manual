@@ -14,18 +14,23 @@ Players can alter the way they present in the |FVTT| interface. This dialog will
 :guilabel:`Player Name`
   This is provided by the |GM|. If you need this changed, speak to them.
 
+.. _UCD player avatar field:
 :guilabel:`Player Avatar`
-  If you are using the |FVTT| :ref:`Audio/Video chat <player av chat>`, this image will be presented as your avatar. The image must exist on the Foundry server. Your GM will be able to avise on where suitable avatars exist.
+  If you are using the |FVTT| :ref:`Audio/Video chat <player av chat>`, this image will be presented as your avatar. The image must exist on the Foundry server. Your GM will be able to advise on where suitable avatars exist.
+
+  The player avatar represents `you` (the player) rather than any character you play in the game.
 
   This avatar may also be used by modules used to customise Foundry.
 
+.. _UCD player color field:
 :guilabel:`Player Color`
-  This is the color used to highlight elements specific to you. In the default interface this color is used for the player name in the :guilabel:`Players` list (lower left).
+  This is the color used to highlight elements specific to you. In the default interface this color is used for the player name in the :doc:`/all/ui/players`.
+
 
   You can either enter a color code directly in the text entry box or (more usefully for most players) use the color picker (accessed by left-clicking the color swatch to the right of the text entry box).
 
 :guilabel:`Player Pronouns`
-  If you have preferred pronouns (or the table have jsked for these to be provided) then you can enter them in this text box, e.g. 'She/Her', 'They/Them'. These are then displayed in the :guilabel:`Players` list (lower left).
+  If you have preferred pronouns (or the table have jsked for these to be provided) then you can enter them in this text box, e.g. 'She/Her', 'They/Them'. These are then displayed in the :doc:`/all/ui/players`.
 
 :guilabel:`Player Character`
   You can select one :ref:`Actor <Actor>` to represent you.

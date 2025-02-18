@@ -18,6 +18,7 @@ Within a :doc:`game world <concepts/game>` there are five roles that a |GM| can 
 
 The specific abilities associated with these roles can be :doc:`configured </all/roles/configuring>` by the |GM|.
 
+.. _roles None:
 None
 ----
 
@@ -25,6 +26,7 @@ This role allows the |GM| to set up a players (assign them ownership a :doc:`con
 
 This role also allows the |GM| to suspend a player (preventing them from logging in to the game) without completely removing them from a game.
 
+.. _roles Player:
 Players
 -------
 
