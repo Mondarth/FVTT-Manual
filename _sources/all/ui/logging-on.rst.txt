@@ -33,4 +33,4 @@ Configuration differences
 
 .. rubric:: Footnotes
 
-.. [#f1] This manual is for the Foundry VTT application. If you are using an online hosted service (e.g. `The Forge <https://https://forge-vtt.com>`_) then some functions will be different (especially for Administator tasks).
+.. [#f1] This manual is for the Foundry VTT application. If you are using an online hosted service (e.g. |TheForge|) then some functions will be different (especially for Administator tasks).

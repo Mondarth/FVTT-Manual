@@ -4,6 +4,12 @@ Game User Interface
 Once logged in to the game you will see the main Foundry user interface. The default interface consists of the following areas [#f1]_.
 
 
+.. figure:: /all/ui/images/main_ui.png
+   :align: center
+
+   Main User Interface
+
+
 
 .. _canvas:
 
@@ -12,6 +18,14 @@ Canvas
 
 
 The canvas is where all the action takes place. It is built up in layers, each layer specialising in one of Foundry's interactive elements.
+
+.. figure:: /all/ui/images/canvas.png
+   :align: right
+   :width: 300px
+
+   Canvas (the boring grey box)
+
+   The |gm| will make it much more interesting.
 
 The layers are :term:`rendered<Render>` in the following order (lowest to highest [#f2]_).
 
@@ -59,8 +73,12 @@ Which tools are available will depend upon:
 1. Your :doc:`access permissions</all/roles/configuring>`, in general Players(|pi|) have fewer tools than Game Masters(|gi|).
 2. The :doc:`modules </all/concepts/module>` active in your world. Modules may add new tools and tool groups.
 
-.. image:: /all/ui/images/tool_panels/token_controls.png
+.. figure:: /all/ui/images/tool_panels/token_controls.png
    :align: right
+
+   Tools (Token Controls selected)
+
+   This is the |gm|\ 's standard tool panel
 
 .. list-table:: Tool Groups
    
@@ -105,6 +123,11 @@ Scene navigation
    
    navigation_bar.rst
 
+.. figure:: /all/ui/images/scene_navigation.png
+   :align: right
+
+   Scene navigation
+
 At the top of the |UI| are the main scene :doc:`navigation buttons <navigation_bar>`. These provide a quick way to move between :doc:`scenes </all/concepts/scene>`.
 
 As a player you will often have access to only one scene, the :ref:`active scene <active scene>`, but the |GM| may enable navigation access to other scenes allowing you to switch which scene is displayed on your :doc:`canvas </all/concepts/canvas>`.
@@ -125,7 +148,6 @@ Tabs
 ----
 
 
-
 .. toctree::
    :hidden:
    
@@ -141,13 +163,19 @@ Tabs
    tabs/settings.rst
 
 
+.. figure:: /all/ui/images/tab_icons/tabs.png
+   :align: right
+
+   Tabs dock showing Chat Messages panel active
+
 To the right of the |UI| is the 'tabs dock'. The following tabs are present by default.
 
 :fas:`comments`:guilabel:`Chat Messages`
 
 This is the main channel by which interactions are reported. Everything from dice rolls, requests for information, messages between players, or between players and the |GM|, all are recorded on the Chat log.
 
-At the bottom of the Chat tab is an entry box for messages, see :ref:`chat messsages`.
+At the bottom of the Chat tab is an entry box for messages, see :ref:`chat messages`.
+
 
 .. todo:: Add section with details on chat message entry
 
@@ -161,7 +189,7 @@ Combat is, for many games, a central feature. The combat tab is the primary inte
 
 Scenes configure the canvas. They can be used to (for example):
 
-- Display an inteactive map to players.
+- Display an interactive map to players.
 - Display a dungeon map, revealing only what the player's character token can see.
 - Display an image during :term:`theatre of the mind` play.
 
@@ -210,16 +238,6 @@ Compendium packs provide access to 'offline' information. Compendium information
 
 Fairly self explanatory, this tab provides access to game settings.
 
-Players
--------
-
-.. toctree::
-   :hidden:
-
-   players.rst
-
-Down in the lower left of the |UI| you find the :doc:`players <players>` list. This can be expanded/collapsed by |LMB|. When expanded you will see a colour coded list of current players.
-
 Hotbar
 ------
 
@@ -228,10 +246,30 @@ Hotbar
 
    hotbar.rst
 
-The :doc:`hotbar <hotbar>` area (bottom of |UI|)ll provides rapid access to pretty much any function you like. Fully customisable by players the hotbar can be populated with functions from around the Foundry interface collecting them into one location.
+.. image:: /all/ui/images/hotbar.png
+   :width: 75%
+   :align: right
+
+The :doc:`hotbar <hotbar>` area (bottom of |UI|) provides rapid access to pretty much any function you like. Fully customisable by players the hotbar can be populated with functions from around the Foundry interface collecting them into one location.
 
 The benefit being that you don't need to go through potentially many clicks to access a function, simply drop
 it onto the hotbar as a shortcut and it becomes one click away.
+
+
+
+Players
+-------
+
+.. image:: /all/ui/images/players_list.png
+   :align: right
+
+.. toctree::
+   :hidden:
+
+   players.rst
+
+Down in the lower left of the |UI| you find the :doc:`players <players>` list. This can be expanded/collapsed by |LMB|. When expanded you will see a colour coded list of current players.
+
 
 
 .. rubric:: Footnotes

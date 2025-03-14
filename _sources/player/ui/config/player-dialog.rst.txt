@@ -32,6 +32,7 @@ Players can alter the way they present in the |FVTT| interface. This dialog will
 :guilabel:`Player Pronouns`
   If you have preferred pronouns (or the table have jsked for these to be provided) then you can enter them in this text box, e.g. 'She/Her', 'They/Them'. These are then displayed in the :doc:`/all/ui/players`.
 
+.. _player config player character:
 :guilabel:`Player Character`
   You can select one :ref:`Actor <Actor>` to represent you.
 

@@ -1,6 +1,4 @@
-.. _player:
-
-Player
-======
+Players Start Here
+==================
 
 

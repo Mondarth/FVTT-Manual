@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing a Game World &mdash; Ulenar&#39;s FoundryVTT Documentation 12.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=12c8f029"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Ulenar's FoundryVTT Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../player.html">Players Start Here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../game_master.html">Game Masters Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gm/developing/overview.html">Developing a Game World</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../administrator.html">Administrators Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Foundry Software</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../all/ui/overview.html">Foundry’s User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../all/roles.html">Foundry User Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../all/concepts.html">Key Concepts</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/todo.html">Work Remaining (To-do)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Ulenar's FoundryVTT Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installing a Game World</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/admin/game_world/install.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installing-a-game-world">
+<h1>Installing a Game World<a class="headerlink" href="#installing-a-game-world" title="Link to this heading"></a></h1>
+<p>We discuss here two apporaches:</p>
+<ol class="arabic simple">
+<li><p>Installing a game world.</p></li>
+<li><p>Installing an adventure into an existing world.</p></li>
+</ol>
+<p>Why two? The second, installing an adventure into an existing world, is by far the more common approach these days but the first method is still available in <abbr title="Foundry Virtual Table Top">FVTT</abbr>.</p>
+<p>Before embarking on this discussion we need to clarify some terminology:</p>
+<dl class="simple">
+<dt>Game World</dt><dd><p>The collection of data that represents</p>
+</dd>
+<dt>Session</dt><dd><p>The periond in which a group plays.</p>
+</dd>
+<dt>Session Wolrd</dt><dd><p>The idea of a game world being used and reused by a group over multiple sessions to play mutiple adventures.</p>
+</dd>
+<dt>Adventure</dt><dd><p>A scenario played out by the group.</p>
+</dd>
+<dt>Campaign</dt><dd><p>Typically longer than an adventure, often consisting of many adventures that the <abbr title="Game Master">GM</abbr> has integrated into the groups ongoing narrative.</p>
+</dd>
+</dl>
+<section id="install-a-world">
+<h2>Install a world<a class="headerlink" href="#install-a-world" title="Link to this heading"></a></h2>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>walkthrough installing a world</p>
+</div>
+</section>
+<section id="installing-an-adventure">
+<h2>Installing an adventure<a class="headerlink" href="#installing-an-adventure" title="Link to this heading"></a></h2>
+<p>This approach is preferred because it allows an adventure (or whole campaign) to be added to an existing <a class="reference internal" href="../../appendices/glossary.html#term-Game-World"><span class="xref std std-term">game world</span></a>. The game world is treated as ‘my groups ongoing session space’ and whatever new adventure the <abbr title="Game Master">GM</abbr> want to add to the groups playing options can be added on to that ongoing ‘session world’. If you were forced to install a game world (rather than adding to an existing world) you would the have to migrate things like player characters, novel items, rules, etc. from the previous world into this new world. It makes more sense for adventure/campaign builders to provide them as modules that can be added to any world rather than forcing everyone to effectively start over on every adventure.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
+  </div>
+
+  
+
+<div>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1E012BACV');kofiwidget2.draw();</script>
+
+<a href="https://www.patreon.com/bePatron?u=125162698" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</div>
+
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

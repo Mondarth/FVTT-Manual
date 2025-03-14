@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Work Remaining (To-do)" href="todo.html" />
-    <link rel="prev" title="Interface Canvas Group" href="technical/interface_canvas_group.html" /> 
+    <link rel="prev" title="Actions" href="../all/concepts/actions.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,28 +45,28 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../player.html">Players Start Here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game_master.html">Game Masters Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gm/developing/overview.html">Developing a Game World</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../administrator.html">Administrators Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/software.html">Foundry Software</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../all/ui/overview.html">Foundry’s User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../all/roles.html">Foundry User Roles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../all/concepts.html">Key Concepts</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Players:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../player/ui/overview.html">Foundry’s User Interface - Players</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../gm/ui/overview.html">Foundry’s User Interface - Game Master</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="technical/primary_canvas_group.html">Primary Canvas Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="technical/interface_canvas_group.html">Interface Canvas Group</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="todo.html">Work Remaining (To-do)</a></li>
 </ul>
@@ -97,16 +97,44 @@
              
   <section id="glossary">
 <h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading"></a></h1>
-<dl class="simple glossary">
+<dl class="glossary">
+<dt id="term-Action">Action<a class="headerlink" href="#term-Action" title="Link to this term"></a></dt><dd><p>An operation that has som effect in the <a class="reference internal" href="#term-Game-World"><span class="xref std std-term">game world</span></a>.</p>
+</dd>
+<dt id="term-Active-Module">Active Module<a class="headerlink" href="#term-Active-Module" title="Link to this term"></a></dt><dd><p>A <span class="xref std std-term">module</span> can be installed but not active. Only active modules are loaded into a running game and therefore only active modules contribute to the amount of data the clients and server need to accomodate.</p>
+</dd>
 <dt id="term-Active-Player">Active Player<a class="headerlink" href="#term-Active-Player" title="Link to this term"></a></dt><dd><p>Any player currently connected to the game <a class="reference internal" href="#term-Game-Session"><span class="xref std std-term">session</span></a>.</p>
+</dd>
+<dt id="term-Administrator">Administrator<a class="headerlink" href="#term-Administrator" title="Link to this term"></a></dt><dd><p>A <a class="reference internal" href="#term-User"><span class="xref std std-term">user</span></a> with complete access to the <abbr title="Foundry Virtual Table Top">FVTT</abbr> server. The administrator manages the game systems, worlds, and modules installed on the <abbr title="Foundry Virtual Table Top">FVTT</abbr> server.</p>
+</dd>
+<dt id="term-Game-System">Game System<a class="headerlink" href="#term-Game-System" title="Link to this term"></a></dt><dd><p>A collection of assets that describe the mechanics of a particular RPG. At the time of writing <abbr title="Foundry Virtual Table Top">FVTT</abbr> supports 312 game systems.</p>
+</dd>
+<dt id="term-Game-Master">Game Master<a class="headerlink" href="#term-Game-Master" title="Link to this term"></a></dt><dd><p>A <a class="reference internal" href="#term-Player"><span class="xref std std-term">player</span></a> responsible for running the <a class="reference internal" href="#term-Game-Session"><span class="xref std std-term">game session</span></a>. This typically involves setting up the <a class="reference internal" href="#term-Game-World"><span class="xref std std-term">game world</span></a>, inviting other players, and then running the gamesession.</p>
 </dd>
 <dt id="term-Game-Session">Game Session<a class="headerlink" href="#term-Game-Session" title="Link to this term"></a></dt><dd><p>As with regular in-person play <abbr title="Foundry Virtual Table Top">FVTT</abbr> is mostly played in sessions<a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. When a <abbr title="Game Master">GM</abbr> starts a <a class="reference internal" href="#term-Game-World"><span class="xref std std-term">game world</span></a></p>
 </dd>
 <dt id="term-Game-World">Game World<a class="headerlink" href="#term-Game-World" title="Link to this term"></a></dt><dd><p>The collection of scenes, chearacters, items, etc, that constitute the <abbr title="Foundry Virtual Table Top">FVTT</abbr> experience for players. See also <a class="reference internal" href="../all/concepts/world.html"><span class="doc">Worlds</span></a>.</p>
 </dd>
+<dt id="term-Interface-Canvas-Group">Interface Canvas Group<a class="headerlink" href="#term-Interface-Canvas-Group" title="Link to this term"></a></dt><dd><p>This is the render group that contains the main <abbr title="User Interface">UI</abbr> elements.</p>
+<blockquote>
+<div><p>A container group which displays interface elements rendered above other canvas groups.</p>
+<p class="attribution">—<a class="reference external" href="https://foundryvtt.com/api/classes/client.InterfaceCanvasGroup.html">Foundry VTT version 12 API documentation</a></p>
+</div></blockquote>
+</dd>
+<dt id="term-Player">Player<a class="headerlink" href="#term-Player" title="Link to this term"></a></dt><dd><p>A <a class="reference internal" href="#term-User"><span class="xref std std-term">user</span></a> who is actively engaged in a game on <abbr title="Foundry Virtual Table Top">FVTT</abbr>.</p>
+</dd>
+<dt id="term-Primary-Canvas-Group">Primary Canvas Group<a class="headerlink" href="#term-Primary-Canvas-Group" title="Link to this term"></a></dt><dd><p>The bulk of things that interact on a scene are rendered in the primary canvas group.</p>
+<blockquote>
+<div><p>The primary Canvas group which generally contains tangible physical objects which exist within the Scene. This group is a CachedContainer which is rendered to the Scene as a SpriteMesh. This allows the rendered result of the Primary Canvas Group to be affected by a BaseSamplerShader.</p>
+<p class="attribution">—<a class="reference external" href="https://foundryvtt.com/api/classes/client.PrimaryCanvasGroup.html">Foundry VTT version 12 API documentation</a></p>
+</div></blockquote>
+</dd>
 <dt id="term-Render">Render<a class="headerlink" href="#term-Render" title="Link to this term"></a></dt><dd><p>To draw on the display.</p>
 </dd>
+<dt id="term-Target">Target<a class="headerlink" href="#term-Target" title="Link to this term"></a></dt><dd><p>The thing to be affected by an <a class="reference internal" href="#term-Action"><span class="xref std std-term">action</span></a>.</p>
+</dd>
 <dt id="term-Theatre-of-the-Mind">Theatre of the Mind<a class="headerlink" href="#term-Theatre-of-the-Mind" title="Link to this term"></a></dt><dd><p>A form of role play in which players rely on their imagination to create a scene.</p>
+</dd>
+<dt id="term-User">User<a class="headerlink" href="#term-User" title="Link to this term"></a></dt><dd><p>An individual who can log on to a <abbr title="Foundry Virtual Table Top">FVTT</abbr> server.</p>
 </dd>
 </dl>
 <p class="rubric">Footnotes</p>
@@ -122,7 +150,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="technical/interface_canvas_group.html" class="btn btn-neutral float-left" title="Interface Canvas Group" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../all/concepts/actions.html" class="btn btn-neutral float-left" title="Actions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="todo.html" class="btn btn-neutral float-right" title="Work Remaining (To-do)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -132,10 +160,15 @@
     <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  
+
+<div>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1E012BACV');kofiwidget2.draw();</script>
+
+<a href="https://www.patreon.com/bePatron?u=125162698" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</div>
+
+
 
 </footer>
         </div>

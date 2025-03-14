@@ -1,7 +1,7 @@
 Key Concepts
 ============
 
-As a :ref:`Player <player>` you can expect your |GM| to walk you through their Foundry setup so that they can check:
+As a :term:`player` you can expect your |GM| to walk you through their Foundry setup so that they can check:
 
 - Your setup (computer, browser, etc.) can support the game.
 - You are comfortable with the basic operation of the game.
@@ -14,7 +14,7 @@ This said, it is best if you are familiar with some basic concepts. For players 
 
 Additionally, familiarise yourself wih the :doc:`/player/ui/overview`
 
-If you are a :ref:`Game Master <game master>`, you really need a good grasp on all the key concepts in this section.
+If you are a :term:`game master`, you will benefit from a good understanding of all the key concepts in this section.
 
 .. toctree::
    :maxdepth: 2
@@ -27,3 +27,5 @@ If you are a :ref:`Game Master <game master>`, you really need a good grasp on a
    concepts/scene.rst
    concepts/sheet.rst
    concepts/package.rst
+   concepts/targeting.rst
+   concepts/actions.rst

@@ -5,14 +5,16 @@
    :hidden:
 
    walls/select.rst
-   walls/rectangle.rst
-   walls/ellipse.rst
-   walls/polygon.rst
-   walls/freehand.rst
-   walls/text.rst
-   walls/informational.rst
+   walls/basic.rst
+   walls/terrain.rst
+   walls/invisible.rst
+   walls/ethereal.rst
+   walls/door.rst
+   walls/secret.rst
+   walls/window.rst
+   walls/clone.rst
    walls/snap.rst
-   walls/config.rst
+   walls/close_all_doors.rst
    walls/clear.rst
 
 

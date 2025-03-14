@@ -45,7 +45,21 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../player.html">Players Start Here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game_master.html">Game Masters Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gm/developing/overview.html">Developing a Game World</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../administrator.html">Administrators Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/software.html">Foundry Software</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="ui/overview.html">Foundry’s User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="roles.html">Foundry User Roles</a></li>
@@ -57,25 +71,13 @@
 <li class="toctree-l2"><a class="reference internal" href="concepts/scene.html">Scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts/sheet.html">Sheet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts/package.html">Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/targeting.html">Targeting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/actions.html">Actions</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Players:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../player/ui/overview.html">Foundry’s User Interface - Players</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../gm/ui/overview.html">Foundry’s User Interface - Game Master</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/technical/primary_canvas_group.html">Primary Canvas Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/technical/interface_canvas_group.html">Interface Canvas Group</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/todo.html">Work Remaining (To-do)</a></li>
 </ul>
@@ -106,7 +108,7 @@
              
   <section id="key-concepts">
 <h1>Key Concepts<a class="headerlink" href="#key-concepts" title="Link to this heading"></a></h1>
-<p>As a <a class="reference internal" href="../player.html#player"><span class="std std-ref">Player</span></a> you can expect your <abbr title="Game Master">GM</abbr> to walk you through their Foundry setup so that they can check:</p>
+<p>As a <a class="reference internal" href="../appendices/glossary.html#term-Player"><span class="xref std std-term">player</span></a> you can expect your <abbr title="Game Master">GM</abbr> to walk you through their Foundry setup so that they can check:</p>
 <ul class="simple">
 <li><p>Your setup (computer, browser, etc.) can support the game.</p></li>
 <li><p>You are comfortable with the basic operation of the game.</p></li>
@@ -117,8 +119,8 @@
 <p>That said, some GM’s will take everyone in the group through the introduction at the start of the first session.</p>
 </div>
 <p>This said, it is best if you are familiar with some basic concepts. For players I recommend you understand at least <a class="reference internal" href="concepts/game.html"><span class="doc">Game</span></a>, <a class="reference internal" href="concepts/actor.html"><span class="doc">Actor</span></a>, and <a class="reference internal" href="concepts/token.html"><span class="doc">Token</span></a></p>
-<p>Additionally, familiarise yourself wih the <a class="reference internal" href="../player/ui/overview.html"><span class="doc">Foundry’s User Interface - Players</span></a></p>
-<p>If you are a <a class="reference internal" href="roles.html#game-master"><span class="std std-ref">Game Master</span></a>, you really need a good grasp on all the key concepts in this section.</p>
+<p>Additionally, familiarise yourself wih the <a class="reference internal" href="../player/ui/overview.html"><span class="doc">Player’s User Interface</span></a></p>
+<p>If you are a <a class="reference internal" href="../appendices/glossary.html#term-Game-Master"><span class="xref std std-term">game master</span></a>, you will benefit from a good understanding of all the key concepts in this section.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Key Concepts:</span></p>
 <ul>
@@ -140,6 +142,8 @@
 <li class="toctree-l2"><a class="reference internal" href="concepts/module.html">Modules</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="concepts/targeting.html">Targeting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts/actions.html">Actions</a></li>
 </ul>
 </div>
 </section>
@@ -158,10 +162,15 @@
     <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  
+
+<div>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1E012BACV');kofiwidget2.draw();</script>
+
+<a href="https://www.patreon.com/bePatron?u=125162698" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</div>
+
+
 
 </footer>
         </div>

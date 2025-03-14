@@ -4,7 +4,7 @@
 .. dropdown:: Find it
    :icon: search
 
-   :kbd:`left-click` |ico1| |then| |ico2| 
+   |LMB| |ico1| |then| |ico2| 
 
    .. dropdown:: Show me
       :icon: video
@@ -17,6 +17,8 @@
 
    Acts on the :doc:`/all/ui/layers/token_actors`.
 
+   Manages the selection of tokens as the :term:`target <Target>` of subsequent :term:`actions <Action>`.
+
    .. card::
 
       Keyboard
@@ -24,11 +26,14 @@
       .. list-table::
 
          * - :kbd:`T`
-           - Target the token under the mouse cursor.
-         * - :kbd:`shift` |and| :kbd:`T`
-           - Token under the mouse cursor is added to, 
+           - Toggle the targeted state of the token under the mouse cursor.
 
-             or removed from, existing targetting selection.
+             Any other targeted tokens will be untargeted.
+         * - :kbd:`shift` |and| :kbd:`T`
+           - Toggle the targeted state of the token under the mouse cursor.
+
+             Other targeted tokens remain targeted.
+
 
    .. card::
 
@@ -44,8 +49,16 @@
             - Target all tokens in the band.
           * - :kbd:`shift` |and| |hLMB| |and| drag
             - Add all tokens in the band to targeted selection.
+          * - |dRMB| on any targeted token that
 
-       .. attention:: Any time the |ico1|\ :doc:`../tokens` tool is active you can target tokens with |dRMB| or :kbd:`T` (and holding :kbd:`shift` toggles the token's targetted state).
+              you do not control\ [#F1]_
+            - Untarget all currently targeted tokens.
+
+       .. attention:: Any time the |ico1|\ :doc:`../tokens` tool is active you can target tokens with |dRMB| or :kbd:`T` (holding :kbd:`shift` toggles the token's targeted state when dealing with targeting of multiple tokens).
+
+   .. include:: /lib/global-keys.rst
+
+   .. include:: /lib/general-canvas-layer-controls.rst
 
 Target individual token
 ------------------------
@@ -68,7 +81,6 @@ To target more than one token at a time, |hLMB| |and| drag. You will see a recta
 .. important:: Selection is based on the token's tile, not its image. Some token images are larger than the token tile.
 
 
-To add multiple targets to selection, hold :kbd:`shift` |and| |hLMB| |and| drag.
 
 Add target to selection
 -----------------------
@@ -79,8 +91,8 @@ A. :kbd:`shift` |and| |LMB| over untargeted token or
 B. place mouse cursor over untargeted token and press :kbd:`shift` |and| :kbd:`T`
 
 
-Add multiple targets to selection
----------------------------------
+Add multiple targets to an existing selection
+---------------------------------------------
 
 To add multiple tokens to selected targets, :kbd:`shift` |and| |hLMB| |and| drag.
 
@@ -96,7 +108,19 @@ A. :kbd:`shift` |and| |LMB| on a targeted token, or
 B. place mouse cursor over a targeted token and :kbd:`shift` |and| :kbd:`T`.
 
 
+Untarget `all` currently targeted tokens
+----------------------------------------
 
+To untarget all tokens either,
+
+A. |dRMB| on any curently targeted token, 
+B. |hLMB| |and| drag to 'select' an area of the canvas that contains no tokens.
+
+
+
+.. rubric:: Footnotes
+
+.. [#F1] If you can control the token, |dRMB| will open the associated actor or token sheet. So, if you are the |gm| this means you need to use one of the other targeting methods.
 
 .. |ico1| image:: /all/ui/images/tool_icons/token_controls_icon.png
    :height: 2ex

@@ -45,7 +45,21 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../player.html">Players Start Here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../game_master.html">Game Masters Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../gm/developing/overview.html">Developing a Game World</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../administrator.html">Administrators Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../admin/software.html">Foundry Software</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../overview.html">Foundry’s User Interface</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../setup.html">Setup Screen</a></li>
@@ -66,8 +80,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../main-interface-components.html#scene-navigation">Scene navigation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../main-interface-components.html#tabs">Tabs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../main-interface-components.html#players">Players</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../main-interface-components.html#hotbar">Hotbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../main-interface-components.html#players">Players</a></li>
 </ul>
 </li>
 </ul>
@@ -75,22 +89,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../roles.html">Foundry User Roles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../concepts.html">Key Concepts</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Players:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../player/ui/overview.html">Foundry’s User Interface - Players</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../gm/ui/overview.html">Foundry’s User Interface - Game Master</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../appendices/technical/primary_canvas_group.html">Primary Canvas Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../appendices/technical/interface_canvas_group.html">Interface Canvas Group</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../appendices/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../appendices/todo.html">Work Remaining (To-do)</a></li>
 </ul>
@@ -173,7 +173,47 @@
 </table>
 </div>
 </div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Global Controls</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">These controls apply whereve
+you are in the Foundry <abbr title="User Interface">UI</abbr>.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Global Keys</p>
 </div>
+<div class="sd-card-body docutils">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">F5</kbd></p></td>
+<td><p class="sd-card-text">Refresh browser</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">ctrl</kbd> <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-plus" viewBox="0 0 16 16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg> <kbd class="kbd docutils literal notranslate">F5</kbd></p></td>
+<td><p class="sd-card-text">Refresh without cache. This will force the browser to download <cite>all</cite> the application conten from the server.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">esc</kbd></p></td>
+<td><p class="sd-card-text">Close all currently ope application windows</p>
+<p class="sd-card-text">If there are no currently open application windows then the <a class="reference internal" href="../../main-menu.html"><span class="doc">Main Menu</span></a> is toggled.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">space</kbd></p></td>
+<td><p class="sd-card-text">Toggle game paused</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">1</kbd> | <kbd class="kbd docutils literal notranslate">2</kbd> | <kbd class="kbd docutils literal notranslate">3</kbd> | <kbd class="kbd docutils literal notranslate">4</kbd> | <kbd class="kbd docutils literal notranslate">5</kbd> | <kbd class="kbd docutils literal notranslate">6</kbd> | <kbd class="kbd docutils literal notranslate">7</kbd> | <kbd class="kbd docutils literal notranslate">8</kbd> | <kbd class="kbd docutils literal notranslate">9</kbd> | <kbd class="kbd docutils literal notranslate">0</kbd></p></td>
+<td><p class="sd-card-text">Activate <a class="reference internal" href="../../hotbar.html"><span class="doc">Hotbar Area</span></a> slot</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">alt</kbd> <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-plus" viewBox="0 0 16 16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg> (<kbd class="kbd docutils literal notranslate">1</kbd> | <kbd class="kbd docutils literal notranslate">2</kbd> | <kbd class="kbd docutils literal notranslate">3</kbd> | <kbd class="kbd docutils literal notranslate">4</kbd> | <kbd class="kbd docutils literal notranslate">5</kbd> | <kbd class="kbd docutils literal notranslate">6</kbd> | <kbd class="kbd docutils literal notranslate">7</kbd> | <kbd class="kbd docutils literal notranslate">8</kbd> | <kbd class="kbd docutils literal notranslate">9</kbd> | <kbd class="kbd docutils literal notranslate">0</kbd>)</p></td>
+<td><p class="sd-card-text">Swap to <a class="reference internal" href="../../hotbar.html"><span class="doc">Hotbar Area</span></a> page by number</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><kbd class="kbd docutils literal notranslate">shift</kbd> <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-plus" viewBox="0 0 16 16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg> <kbd class="kbd docutils literal notranslate">C</kbd></p></td>
+<td><p class="sd-card-text">Switch focus to chat entry on <a class="reference internal" href="../../tabs/chat.html"><span class="doc">Chat Messages Tab</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</details></div>
 </details><section id="to-measure-a-straight-path">
 <h2>To measure a straight path<a class="headerlink" href="#to-measure-a-straight-path" title="Link to this heading"></a></h2>
 <ul class="simple">
@@ -259,10 +299,15 @@
     <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  
+
+<div>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1E012BACV');kofiwidget2.draw();</script>
+
+<a href="https://www.patreon.com/bePatron?u=125162698" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</div>
+
+
 
 </footer>
         </div>

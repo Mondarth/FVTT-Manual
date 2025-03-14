@@ -45,7 +45,21 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../player.html">Players Start Here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../game_master.html">Game Masters Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gm/developing/overview.html">Developing a Game World</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../administrator.html">Administrators Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../admin/software.html">Foundry Software</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../overview.html">Foundry’s User Interface</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../setup.html">Setup Screen</a></li>
@@ -66,8 +80,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../main-interface-components.html#tools">Tools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../main-interface-components.html#scene-navigation">Scene navigation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../main-interface-components.html#tabs">Tabs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../main-interface-components.html#players">Players</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../main-interface-components.html#hotbar">Hotbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../main-interface-components.html#players">Players</a></li>
 </ul>
 </li>
 </ul>
@@ -75,22 +89,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../roles.html">Foundry User Roles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../concepts.html">Key Concepts</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Players:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../player/ui/overview.html">Foundry’s User Interface - Players</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../gm/ui/overview.html">Foundry’s User Interface - Game Master</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../appendices/technical/primary_canvas_group.html">Primary Canvas Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../appendices/technical/interface_canvas_group.html">Interface Canvas Group</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../appendices/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../appendices/todo.html">Work Remaining (To-do)</a></li>
 </ul>
@@ -135,7 +135,7 @@
 </div>
 <section id="object-drawings">
 <span id="object-drawing"></span><h3>Object Drawings<a class="headerlink" href="#object-drawings" title="Link to this heading"></a></h3>
-<p>Object drawings are rendered in the <span class="xref std std-doc">Primary Canvas Group</span>. They are affected by scene <a class="reference internal" href="effects.html#lighting"><span class="std std-ref">lighting</span></a> and <a class="reference internal" href="effects.html#fog-of-war"><span class="std std-ref">fog of war</span></a> exploration. This means that players will only see these drawings once their <span class="xref std std-ref">character token</span> can see that part of the scene.</p>
+<p>Object drawings are rendered in the <a class="reference internal" href="../../../appendices/glossary.html#term-Primary-Canvas-Group"><span class="xref std std-term">Primary Canvas Group</span></a>. They are affected by scene <a class="reference internal" href="effects.html#lighting"><span class="std std-ref">lighting</span></a> and <a class="reference internal" href="effects.html#fog-of-war"><span class="std std-ref">fog of war</span></a> exploration. This means that players will only see these drawings once their <span class="xref std std-ref">character token</span> can see that part of the scene.</p>
 <p>Because object drawings are in the primary group they interact with other layers (<a class="reference internal" href="background_image.html"><span class="doc">background</span></a>, <a class="reference internal" href="foreground_image.html"><span class="doc">foreground</span></a>, <a class="reference internal" href="tiles.html"><span class="doc">tiles</span></a>, <a class="reference internal" href="token_actors.html"><span class="doc">tokens</span></a>, and <a class="reference internal" href="effects.html"><span class="doc">effects</span></a> ). The elevation and sort order affect how the drawing is rendered in relation to these other layers.</p>
 <div class="admonition-todo admonition" id="id3">
 <p class="admonition-title">Todo</p>
@@ -148,7 +148,7 @@
 </section>
 <section id="informational-drawings">
 <span id="informational-drawing"></span><h3>Informational Drawings<a class="headerlink" href="#informational-drawings" title="Link to this heading"></a></h3>
-<p>Informational drawings ar rendered in the <span class="xref std std-doc">Interface Canvas Group</span> and is visible to all players (unless explicitly hidden by making the drawing invisible).</p>
+<p>Informational drawings are rendered in the <a class="reference internal" href="../../../appendices/glossary.html#term-Interface-Canvas-Group"><span class="xref std std-term">Interface Canvas Group</span></a> and is visible to all players (unless explicitly hidden by making the drawing invisible).</p>
 <p>Because informational drawings are in the interface group they appear over all other canvas layers, regardless of their elevation or sort order. However, elevation and sort order <cite>are</cite> significant between informational drawings on the same <a class="reference internal" href="../../concepts/scene.html"><span class="doc">scene</span></a>.</p>
 <div class="admonition-todo admonition" id="id5">
 <p class="admonition-title">Todo</p>
@@ -172,10 +172,15 @@
     <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  
+
+<div>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1E012BACV');kofiwidget2.draw();</script>
+
+<a href="https://www.patreon.com/bePatron?u=125162698" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</div>
+
+
 
 </footer>
         </div>

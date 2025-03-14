@@ -39,6 +39,8 @@
           * - |RMB|
             - Cancel marked path
 
+   .. include:: /lib/global-keys.rst
+
 To measure a straight path
 --------------------------
 

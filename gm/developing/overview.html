@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Primary Canvas Group &mdash; Ulenar&#39;s FoundryVTT Documentation 12.0.0 documentation</title>
+  <title>Developing a Game World &mdash; Ulenar&#39;s FoundryVTT Documentation 12.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -22,8 +22,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Interface Canvas Group" href="interface_canvas_group.html" />
-    <link rel="prev" title="Logging on" href="../../admin/ui/logging-on.html" /> 
+    <link rel="next" title="Administrators Start Here" href="../../administrator.html" />
+    <link rel="prev" title="Game Masters Start Here" href="../../game_master.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,30 +45,30 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Players:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../player.html">Players Start Here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../game_master.html">Game Masters Start Here</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developing a Game World</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../administrator.html">Administrators Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/software.html">Foundry Software</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../all/ui/overview.html">Foundry’s User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../all/roles.html">Foundry User Roles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../all/concepts.html">Key Concepts</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Players:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../player/ui/overview.html">Foundry’s User Interface - Players</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Game Masters:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gm/ui/overview.html">Foundry’s User Interface - Game Master</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Administrator:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../admin/ui/overview.html">Foundry’s User Interface - Administrator</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Primary Canvas Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="interface_canvas_group.html">Interface Canvas Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../todo.html">Work Remaining (To-do)</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/todo.html">Work Remaining (To-do)</a></li>
 </ul>
 
         </div>
@@ -85,9 +85,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Primary Canvas Group</li>
+      <li class="breadcrumb-item active">Developing a Game World</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/appendices/technical/primary_canvas_group.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/gm/developing/overview.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -95,21 +95,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="primary-canvas-group">
-<h1>Primary Canvas Group<a class="headerlink" href="#primary-canvas-group" title="Link to this heading"></a></h1>
-<p>The bulk of things that interact on a scene are rendered in the primary canvas group.</p>
-<blockquote>
-<div><p>The primary Canvas group which generally contains tangible physical objects which exist within the Scene. This group is a CachedContainer which is rendered to the Scene as a SpriteMesh. This allows the rendered result of the Primary Canvas Group to be affected by a BaseSamplerShader.</p>
-<p class="attribution">—<a class="reference external" href="https://foundryvtt.com/api/classes/client.PrimaryCanvasGroup.html">Foundry VTT version 12 API documentation</a></p>
-</div></blockquote>
+  <section id="developing-a-game-world">
+<h1>Developing a Game World<a class="headerlink" href="#developing-a-game-world" title="Link to this heading"></a></h1>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Tutorial, building a game world</p>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../admin/ui/logging-on.html" class="btn btn-neutral float-left" title="Logging on" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="interface_canvas_group.html" class="btn btn-neutral float-right" title="Interface Canvas Group" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../../game_master.html" class="btn btn-neutral float-left" title="Game Masters Start Here" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../administrator.html" class="btn btn-neutral float-right" title="Administrators Start Here" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -118,10 +117,15 @@
     <p>&#169; Copyright 2024, UlenarOfMondarth.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+  
+
+<div>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'E1E012BACV');kofiwidget2.draw();</script>
+
+<a href="https://www.patreon.com/bePatron?u=125162698" data-patreon-widget-type="become-patron-button">Become a member!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</div>
+
+
 
 </footer>
         </div>
