@@ -12,7 +12,7 @@
 .. dropdown:: Find it
    :icon: search
 
-   :kbd:`left-click` |ico1|  
+   |LMB| |ico1|  
 
    .. dropdown:: Show me
       :icon: video

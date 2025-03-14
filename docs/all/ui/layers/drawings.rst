@@ -23,7 +23,7 @@ The drawing type can be changed after it has been created using the 'drawing rol
 Object Drawings
 ~~~~~~~~~~~~~~~
 
-Object drawings are rendered in the :doc:`Primary Canvas Group </technical/primary_canvas_group>`. They are affected by scene :ref:`lighting <lighting>` and :ref:`fog of war <fog of war>` exploration. This means that players will only see these drawings once their :ref:`character token` can see that part of the scene.
+Object drawings are rendered in the :term:`Primary Canvas Group`. They are affected by scene :ref:`lighting <lighting>` and :ref:`fog of war <fog of war>` exploration. This means that players will only see these drawings once their :ref:`character token` can see that part of the scene.
 
 Because object drawings are in the primary group they interact with other layers (:doc:`background <background_image>`, :doc:`foreground <foreground_image>`, :doc:`tiles <tiles>`, :doc:`tokens <token_actors>`, and :doc:`effects <effects>` ). The elevation and sort order affect how the drawing is rendered in relation to these other layers.
 
@@ -36,7 +36,7 @@ Because object drawings are in the primary group they interact with other layers
 Informational Drawings
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Informational drawings ar rendered in the :doc:`Interface Canvas Group </technical/interface_canvas_group>` and is visible to all players (unless explicitly hidden by making the drawing invisible).
+Informational drawings are rendered in the :term:`Interface Canvas Group` and is visible to all players (unless explicitly hidden by making the drawing invisible).
 
 Because informational drawings are in the interface group they appear over all other canvas layers, regardless of their elevation or sort order. However, elevation and sort order `are` significant between informational drawings on the same :doc:`scene </all/concepts/scene>`.
 

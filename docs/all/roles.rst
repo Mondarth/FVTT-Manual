@@ -41,6 +41,7 @@ Typically, your Game Master will also provide other details, such as access to a
 
 As a player you should be familiar with the :doc:`main user interface elements </player/ui/overview>`.
 
+
 Trusted Players
 ---------------
 
@@ -51,7 +52,7 @@ Assitant GM
 
 By default a player with the Assistant GM role nas the same permissions as the Game Master.
 
-.. _game master:
+.. _roles game master:
 Game Masters
 ------------
 
@@ -65,7 +66,7 @@ Once you have a game world then you, as Game Master, will run that game much as 
 Administrators
 --------------
 
-The rarest breed, Administrators are responsible for managing the Foundry server itself. If you are self-hosting (rather than using a hosting service like `The Forge <https://forge-vtt.com/>`_) the administator will install Foundry, configure it, add game systems, modules and worlds ready for the Game Masters and Players to use.
+The rarest breed, Administrators are responsible for managing the Foundry server itself. If you are self-hosting (rather than using a hosting service like |TheForgee|) the administator will install Foundry, configure it, add game systems, modules and worlds ready for the Game Masters and Players to use.
 
 If you have access to the :doc:`ui/setup` you are an Administator.
 

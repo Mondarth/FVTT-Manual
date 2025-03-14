@@ -1,5 +1,5 @@
-Foundry's User Interface - Administrator
-========================================
+Administrator's Start Here
+==========================
 
 As the Administrator you are mainly concerned with the server's setup screen.
 

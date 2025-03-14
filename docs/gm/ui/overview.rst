@@ -1,5 +1,5 @@
-Foundry's User Interface - Game Master
-======================================
+Game Master's User Interface
+============================
 
 As a Game Master you have a lot more controls on your user interface.
 

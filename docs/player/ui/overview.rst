@@ -1,5 +1,5 @@
-Foundry's User Interface - Players
-==================================
+Player's User Interface
+=======================
 
 The Foundry User Interface is described in detail in the :doc:`/all/ui/overview`. This 'Players' section describle how players might expect to interact with the interface.
 

@@ -10,36 +10,35 @@ A manual for Foundry VTT.
 
 .. toctree::
    :maxdepth: 2
-   :caption: General:
-
-   all/ui/overview.rst
-   all/roles.rst
-   all/concepts.rst
-   all/appendices/todo.rst
-   
-.. toctree::
-   :maxdepth: 2
    :caption: Players:
 
-   player/ui/overview.rst
+   player.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Game Masters:
 
-   gm/ui/overview.rst
+   game_master.rst
+   gm/developing/overview.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Administrator:
     
-   admin/ui/overview.rst
+   administrator.rst
+   admin/software.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Reference:
+
+   all/ui/overview.rst
+   all/roles.rst
+   all/concepts.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Appendices:
 
-   appendices/technical/primary_canvas_group.rst
-   appendices/technical/interface_canvas_group.rst
    appendices/glossary.rst
    appendices/todo.rst

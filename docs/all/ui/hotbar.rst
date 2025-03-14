@@ -1,4 +1,4 @@
 Hotbar Area
 ===========
 
-
+.. todo:: HotBar
